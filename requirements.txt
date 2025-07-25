@@ -1,4 +1,3 @@
-streamlit==1.33.0
-transformers==4.41.2
-torch
-PyPDF2==3.0.1
+streamlit
+transformers
+torch==2.2.2
