@@ -7,11 +7,7 @@ from datetime import date
 st.set_page_config(page_title="Indian Legal AI Agent", layout="wide")
 
 # Load summarizer
-summarizer = pipeline(
-    "summarization",
-    model="philschmid/bart-large-cnn-samsum-onnx",
-    tokenizer="facebook/bart-large-cnn"
-)
+summarizer = pipeline("summarization", model="google/pegasus-xsum")
 
 # Helper: summarize long text
 def summarize_text(text):
