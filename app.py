@@ -7,7 +7,7 @@ from datetime import date
 st.set_page_config(page_title="Indian Legal AI Agent", layout="wide")
 
 # Load summarizer
-summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6", framework="tf")
 
 # Helper: summarize long text
 def summarize_text(text):
